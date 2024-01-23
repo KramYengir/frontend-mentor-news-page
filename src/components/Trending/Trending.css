@@ -1,0 +1,34 @@
+.trending {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.trending .trending__card {
+  display: grid;
+  grid-template-columns: 0.45fr 1fr;
+  gap: 1rem;
+}
+
+.trending__card img {
+  max-width: 100%;
+}
+
+.trending__card .card__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card__text h2 {
+  font-size: 2.25rem;
+  color: var(--grayish-blue);
+}
+
+.card__text h3 {
+  font-size: 1.25rem;
+}
+
+.card__text p {
+  color: var(--dark-grayish-blue);
+}
