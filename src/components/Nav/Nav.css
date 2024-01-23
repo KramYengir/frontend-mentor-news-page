@@ -14,11 +14,21 @@ nav {
 
 nav.open {
   right: 0;
-  background: rgba(46, 46, 46, 0.349);
+  background: hsla(240, 100%, 5%, 0.425);
 }
 
 nav ul {
-  padding: 100px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 
-  background: white;
+  width: min(300px, 70vw);
+  padding: 150px 25px;
+
+  background: hsl(36, 100%, 99%);
+}
+
+nav ul li a {
+  font-size: 1.2rem;
+  color: var(--very-dark-blue);
 }

@@ -14,7 +14,7 @@ const Header = () => {
       <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
         <img src={isMenuOpen ? menuClose : menu} alt="" />
       </button>
-      <Nav isMenuOpen={isMenuOpen} />
+      <Nav isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
     </header>
   );
 };
