@@ -1,0 +1,35 @@
+.hero img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-block: 1rem;
+}
+
+.hero p {
+  line-height: 1.5;
+  color: var(--dark-grayish-blue);
+}
+
+.hero button {
+  margin-block: 2rem;
+  padding: 15px 35px;
+
+  border: 1px solid transparent;
+
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+
+  color: var(--off-white);
+  background-color: var(--primary-red);
+}
+
+.hero button:focus-visible,
+.hero button:hover {
+  color: var(--off-white);
+  background-color: var(--very-dark-blue);
+}

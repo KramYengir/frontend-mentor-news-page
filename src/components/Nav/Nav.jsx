@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+
 import "./Nav.css";
 
 const Nav = ({ isMenuOpen, setIsMenuOpen }) => {
