@@ -7,20 +7,18 @@ import TrendingCard from "./TrendingCard";
 
 const Trending = () => {
   return (
-    <section>
-      <div className="trending">
-        {Data.map((entry) => (
-          <TrendingCard
-            key={entry.id}
-            number={entry.number}
-            image={entry.image}
-            imageAlt={entry.imageAlt}
-            title={entry.title}
-            description={entry.description}
-          />
-        ))}
-      </div>
-    </section>
+    <div className="trending container">
+      {Data.map((entry) => (
+        <TrendingCard
+          key={entry.id}
+          number={entry.number}
+          image={entry.image}
+          imageAlt={entry.imageAlt}
+          title={entry.title}
+          description={entry.description}
+        />
+      ))}
+    </div>
   );
 };
 

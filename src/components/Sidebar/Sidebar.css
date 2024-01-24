@@ -24,6 +24,14 @@ aside p {
 }
 
 aside hr {
-  border-color: var(--grayish-blue);
+  border-color: var(--dark-grayish-blue);
   margin-block: 1rem;
+}
+
+/***** ON DESKTOP *******/
+
+@media screen and (min-width: 1000px) {
+  aside hr {
+    margin-block: 2rem;
+  }
 }

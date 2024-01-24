@@ -11,7 +11,8 @@
 }
 
 .trending__card img {
-  max-width: 100%;
+  max-width: min(100%, 250px);
+  height: auto;
 }
 
 .trending__card .card__text {
@@ -31,4 +32,23 @@
 
 .card__text p {
   color: var(--dark-grayish-blue);
+}
+
+/***** ON DESKTOP *******/
+
+@media screen and (min-width: 800px) {
+  .trending {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .trending .trending__card {
+    grid-template-columns: auto 1fr;
+  }
+
+  .trending__card img {
+    max-width: min(100%, 140px);
+    height: 100%;
+  }
 }

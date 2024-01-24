@@ -8,10 +8,17 @@ import { useState } from "react";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+
+    // Toggle a class on the body to disable scrolling
+    document.body.classList.toggle("no-scroll", !isMenuOpen);
+  };
+
   return (
     <header className="container">
       <img src={logo} alt="Logo of company" />
-      <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
+      <button onClick={() => toggleMenu()}>
         <img src={isMenuOpen ? menuClose : menu} alt="" />
       </button>
       <Nav isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />

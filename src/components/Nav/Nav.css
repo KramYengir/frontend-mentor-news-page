@@ -1,5 +1,5 @@
 nav {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: -100%; /* Move off-screen */
   height: 100vh;
@@ -15,6 +15,7 @@ nav {
 nav.open {
   right: 0;
   background: hsla(240, 100%, 5%, 0.425);
+  overflow: hidden;
 }
 
 nav ul {
@@ -36,4 +37,27 @@ nav ul li a:focus-visible,
 nav ul li a:hover,
 nav ul li a:active {
   color: var(--primary-orange);
+}
+
+/***** ON DESKTOP *******/
+
+@media screen and (min-width: 800px) {
+  nav {
+    position: initial;
+
+    height: initial;
+    width: initial;
+
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+
+    width: initial;
+    padding: 0;
+  }
 }
